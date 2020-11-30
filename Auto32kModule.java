@@ -42,7 +42,7 @@ public class Auto32kModule {
 			return;
 		}
 
-		WWESAuto32k.mc.fontRenderer.drawStringWithShadow("WWE's Auto 32k " + (WWESAuto32k.is32kEnabled ? "Enabled" : "Disabled") + "[" + WWESAuto32k.cps + "]", 2, event.getResolution().getScaledHeight() - 10, 0xd1ff0000);
+		WWESAuto32k.mc.fontRenderer.drawStringWithShadow("Ferrioz's Auto 32k " + (WWESAuto32k.is32kEnabled ? "On" : "Off") + "[" + WWESAuto32k.cps + "]", 2, event.getResolution().getScaledHeight() - 10, 0xd1ff0000);
 		if (WWESAuto32k.is32kEnabled) {
 			WWESAuto32k.mc.fontRenderer.drawStringWithShadow("Kill Aura [" + WWESAuto32k.isKillauraOptionEnabled + "]", 2, event.getResolution().getScaledHeight() - 20, 0xd1ff0000);
 		}
