@@ -21,8 +21,8 @@ import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 
 @Mod(modid = WWESAuto32k.MODID, name = WWESAuto32k.NAME, version = WWESAuto32k.VERSION)
 public class WWESAuto32k {
-	public static final String MODID = "wweauto32k";
-	public static final String NAME = "WWE's Auto 32k";
+	public static final String MODID = "ferrioz32k";
+	public static final String NAME = "Ferrioz's Auto 32k";
 	public static final String VERSION = "0.1";
 	
 	public static Minecraft mc = Minecraft.getMinecraft();//holy crap did this cause problems..o_o, you guys know absolutely nothing changes when using Minecraft.getMinecraft(), and this..., and for rusher hack i was talking about stuff like this, https://imgur.com/MQKoLqX , i have nothing against someone using Minecraft.getMinecraft(), every instance they need the minecraft instance, like i said its exactly the same
@@ -37,10 +37,10 @@ public class WWESAuto32k {
 
 	@EventHandler
 	public void init(FMLInitializationEvent event) {
-		auto32kKeybind = new KeyBinding("Auto 32k bind", Keyboard.KEY_APOSTROPHE, "WWE Auto 32k");
-		auto32kCpsIncrementKeybind = new KeyBinding("Auto 32k cps increment", Keyboard.KEY_EQUALS, "WWE Auto 32k");
-		auto32kCpsdecrementKeybind = new KeyBinding("Auto 32k cps decrement", Keyboard.KEY_MINUS, "WWE Auto 32k");
-		auto32kToggleKillauraKeybind = new KeyBinding("Auto 32k kill aura toggle", Keyboard.KEY_BACKSLASH, "WWE Auto 32k");
+		auto32kKeybind = new KeyBinding("Auto 32k bind", Keyboard.KEY_APOSTROPHE, "Ferrioz's Auto 32k");
+		auto32kCpsIncrementKeybind = new KeyBinding("Auto 32k cps increment", Keyboard.KEY_EQUALS, "Ferrioz's Auto 32k");
+		auto32kCpsdecrementKeybind = new KeyBinding("Auto 32k cps decrement", Keyboard.KEY_MINUS, "Ferrioz's Auto 32k");
+		auto32kToggleKillauraKeybind = new KeyBinding("Auto 32k kill aura toggle", Keyboard.KEY_BACKSLASH, "Ferrioz's Auto 32k");
 		ClientRegistry.registerKeyBinding(auto32kKeybind);
 		ClientRegistry.registerKeyBinding(auto32kCpsIncrementKeybind);
 		ClientRegistry.registerKeyBinding(auto32kCpsdecrementKeybind);
@@ -55,7 +55,7 @@ public class WWESAuto32k {
 	
 	public static void saveInformation() {
 		try {
-			File file = new File(mc.gameDir.getAbsolutePath(), "WWE's Auto 32k.txt");
+			File file = new File(mc.gameDir.getAbsolutePath(), "Ferrioz's Auto 32k.txt");
 			if (!file.exists()) {
 				file.createNewFile();
 			}
@@ -70,7 +70,7 @@ public class WWESAuto32k {
 
 	public void loadInformation() {
 		try {
-			File file = new File(mc.gameDir.getAbsolutePath(), "WWE's Auto 32k.txt");
+			File file = new File(mc.gameDir.getAbsolutePath(), "Ferrioz's Auto 32k.txt");
 			if (!file.exists()) {
 				saveInformation();
 				return;
